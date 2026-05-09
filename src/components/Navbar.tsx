@@ -51,10 +51,10 @@ export default function Navbar() {
           <a
             href="#hero"
             onClick={e => { e.preventDefault(); handleNavClick('#hero') }}
-            className="font-[family:var(--font-display)] font-bold text-2xl text-coral hover:opacity-80 transition-opacity"
+            className="font-[family:var(--font-logo)] font-bold text-xl uppercase tracking-[0.15em] hover:opacity-80 transition-opacity"
             aria-label="Go to top"
           >
-            RR
+            <span className="text-ink dark:text-ink-on-dark">Render</span><span className="text-coral">Spark</span>
           </a>
 
           {/* Desktop nav */}

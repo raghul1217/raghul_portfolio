@@ -4,14 +4,14 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FiGithub, FiLinkedin, FiTwitter, FiInstagram, FiMail, FiArrowUp } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiMessageCircle, FiInstagram, FiMail, FiArrowUp } from 'react-icons/fi'
 
 const SOCIALS = [
-  { icon: FiGithub,    href: '#',  label: 'GitHub'    }, // TODO: Replace
-  { icon: FiLinkedin,  href: '#',  label: 'LinkedIn'  }, // TODO: Replace
-  { icon: FiTwitter,   href: '#',  label: 'Twitter'   }, // TODO: Replace
-  { icon: FiInstagram, href: '#',  label: 'Instagram' }, // TODO: Replace
-  { icon: FiMail,      href: 'mailto:#', label: 'Email' }, // TODO: Replace
+  { icon: FiGithub,         href: 'https://github.com/raghul1217',                  label: 'GitHub'    },
+  { icon: FiLinkedin,       href: 'https://www.linkedin.com/in/raghul-ram/',         label: 'LinkedIn'  },
+  { icon: FiMessageCircle,  href: 'https://wa.me/9345546946',                        label: 'WhatsApp'  },
+  { icon: FiInstagram,      href: 'https://www.instagram.com/raghul_ramm',           label: 'Instagram' },
+  { icon: FiMail,           href: 'mailto:raghulramakrishnan2004@gmail.com',         label: 'Email'     },
 ]
 
 export default function Footer() {
@@ -29,8 +29,8 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto px-6 flex flex-col items-center gap-6">
 
           {/* Monogram */}
-          <span className="font-[family:var(--font-display)] font-bold text-3xl text-coral">
-            RR
+          <span className="font-[family:var(--font-logo)] font-bold text-2xl uppercase tracking-[0.15em]">
+            <span className="text-ink dark:text-ink-on-dark">Render</span><span className="text-coral">Spark</span>
           </span>
 
           {/* Social icons */}

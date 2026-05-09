@@ -23,10 +23,10 @@ interface FormErrors {
 }
 
 const CONTACT_ROWS = [
-  { icon: FiMail,     label: 'Email',    value: 'hello@raghulramakrishnan.com', href: 'mailto:hello@raghulramakrishnan.com', accent: 'coral'  }, // TODO: Replace
-  { icon: FiLinkedin, label: 'LinkedIn', value: 'linkedin.com/in/raghulramakrishnan', href: 'https://linkedin.com', accent: 'sky'   }, // TODO: Replace
-  { icon: FiGithub,   label: 'GitHub',   value: 'github.com/raghulramakrishnan',   href: 'https://github.com', accent: 'mint'  }, // TODO: Replace
-  { icon: FiGlobe,    label: 'Portfolio',value: 'renderspark.vercel.app',            href: 'https://renderspark.vercel.app', accent: 'lilac' },
+  { icon: FiMail,     label: 'Email',    value: 'raghulramakrishnan2004@gmail.com', href: 'mailto:raghulramakrishnan2004@gmail.com', accent: 'coral'  },
+  { icon: FiLinkedin, label: 'LinkedIn', value: 'linkedin.com/in/raghul-ram',         href: 'https://www.linkedin.com/in/raghul-ram/', accent: 'sky'   },
+  { icon: FiGithub,   label: 'GitHub',   value: 'github.com/raghul1217',              href: 'https://github.com/raghul1217',           accent: 'mint'  },
+  { icon: FiGlobe,    label: 'Figma',    value: 'figma.com/@renderspark',             href: 'https://www.figma.com/@renderspark',      accent: 'lilac' },
 ]
 
 const ACCENT_ICON: Record<string, string> = {

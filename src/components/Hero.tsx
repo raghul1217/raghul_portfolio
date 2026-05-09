@@ -87,9 +87,9 @@ export default function Hero() {
             {/* Social icons */}
             <motion.div {...fadeUp(0.5)} className="flex gap-4 pt-2">
               {[
-                { icon: <FiGithub size={18} />, href: '#', label: 'GitHub' },        // TODO: Replace with real link
-                { icon: <FiLinkedin size={18} />, href: '#', label: 'LinkedIn' },     // TODO: Replace with real link
-                { icon: <FiMail size={18} />, href: 'mailto:#', label: 'Email' },    // TODO: Replace with real link
+                { icon: <FiGithub size={18} />, href: 'https://github.com/raghul1217', label: 'GitHub' },
+                { icon: <FiLinkedin size={18} />, href: 'https://www.linkedin.com/in/raghul-ram/', label: 'LinkedIn' },
+                { icon: <FiMail size={18} />, href: 'mailto:raghulramakrishnan2004@gmail.com', label: 'Email' },
               ].map(social => (
                 <a
                   key={social.label}
