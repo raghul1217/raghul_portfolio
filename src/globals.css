@@ -1,0 +1,74 @@
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,500&f[]=instrument-sans@400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+/* Switch dark mode from media-query to class strategy (toggled via JS on <html>) */
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ── Candy Accent Colors ── */
+  --color-coral:  #E8603A;
+  --color-sky:    #38A3E8;
+  --color-mint:   #1DC98A;
+  --color-lemon:  #F5B731;
+  --color-lilac:  #8B7EF0;
+
+  /* ── Light Theme Surfaces ── */
+  --color-bg:        #FFFFFF;
+  --color-surface:   #F6F5F2;
+  --color-surface2:  #EDECEA;
+  --color-border:    #D3D1C7;
+
+  /* ── Dark Theme Surfaces ── */
+  --color-dark-bg:       #0D0D14;
+  --color-dark-surface:  #16161F;
+  --color-dark-surface2: #1E1E2C;
+  --color-dark-border:   #2A2A38;
+
+  /* ── Typography ── */
+  --color-ink:           #111118;
+  --color-ink-muted:     #5A5A6A;
+  --color-ink-on-dark:   #E8E8F0;
+  --color-ink-muted-dark:#8888A0;
+
+  /* ── Fonts ── */
+  --font-display: 'Cabinet Grotesk', 'DM Sans', sans-serif;
+  --font-body:    'Instrument Sans', 'DM Sans', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+
+  /* ── Spacing extras ── */
+  --radius-pill: 999px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8603A44;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E8603A;
+}
