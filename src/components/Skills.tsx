@@ -91,7 +91,7 @@ export default function Skills() {
 
               {/* Skill pills */}
               <div className="flex flex-wrap gap-3">
-                {group.skills.map((skill, index) => {
+                {group.skills.map((skill) => {
                   const Icon = SKILL_ICONS[skill]
                   const accentClass = ACCENT_COLORS[group.color]
                   return (
