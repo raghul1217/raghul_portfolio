@@ -4,8 +4,9 @@
  */
 
 import { motion } from 'framer-motion'
-import { FiGithub, FiLinkedin, FiMail, FiUser } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
 import { useTypewriter } from '../hooks/useTypewriter'
+import raghulPhoto from '../assets/raghul.jpeg'
 
 const TYPEWRITER_WORDS = ['Software Engineer', 'Graphic Designer', 'Freelancer', 'Full-Stack Developer']
 
@@ -123,14 +124,11 @@ export default function Hero() {
               {/* Profile image circle */}
               <div className="absolute inset-[3px] rounded-full bg-surface dark:bg-dark-surface overflow-hidden flex items-center justify-center">
                 <img
-                  src="/profile.jpg"
+                  src={raghulPhoto}
                   alt="Raghul Ramakrishnan"
                   className="w-full h-full object-cover"
                   loading="lazy"
-                  onError={e => { (e.currentTarget as HTMLImageElement).style.display = 'none' }}
                 />
-                {/* Fallback silhouette */}
-                <FiUser className="text-8xl text-ink-muted/30 dark:text-ink-muted-dark/30 absolute" size={120} />
               </div>
 
               {/* Floating accent blobs */}
