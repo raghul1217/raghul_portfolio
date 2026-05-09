@@ -1,6 +1,6 @@
 @import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,500&f[]=instrument-sans@400,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap');
 @import "tailwindcss";
 
 /* Switch dark mode from media-query to class strategy (toggled via JS on <html>) */
@@ -36,7 +36,7 @@
   --font-display: 'Cabinet Grotesk', 'DM Sans', sans-serif;
   --font-body:    'Instrument Sans', 'DM Sans', sans-serif;
   --font-mono:    'JetBrains Mono', monospace;
-  --font-logo:    'Josefin Sans', sans-serif;
+  --font-logo:    'Syne', sans-serif;
 
   /* ── Spacing extras ── */
   --radius-pill: 999px;

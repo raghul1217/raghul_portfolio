@@ -51,7 +51,7 @@ export default function Navbar() {
           <a
             href="#hero"
             onClick={e => { e.preventDefault(); handleNavClick('#hero') }}
-            className="font-[family:var(--font-logo)] font-bold text-xl uppercase tracking-[0.15em] hover:opacity-80 transition-opacity"
+            className="font-[family:var(--font-logo)] font-extrabold text-xl tracking-tight hover:opacity-80 transition-opacity"
             aria-label="Go to top"
           >
             <span className="text-ink dark:text-ink-on-dark">Render</span><span className="text-coral">Spark</span>

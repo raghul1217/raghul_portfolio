@@ -29,7 +29,7 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto px-6 flex flex-col items-center gap-6">
 
           {/* Monogram */}
-          <span className="font-[family:var(--font-logo)] font-bold text-2xl uppercase tracking-[0.15em]">
+          <span className="font-[family:var(--font-logo)] font-extrabold text-2xl tracking-tight">
             <span className="text-ink dark:text-ink-on-dark">Render</span><span className="text-coral">Spark</span>
           </span>
 
