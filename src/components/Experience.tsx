@@ -76,10 +76,10 @@ export default function Experience() {
 
                   {/* Card */}
                   <motion.div
-                    initial={{ opacity: 0, x: isLeft ? -60 : 60 }}
+                    initial={{ opacity: 0, x: isLeft ? -50 : 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
+                    viewport={{ once: true, margin: '-10% 0px' }}
+                    transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] as const }}
                     className={`w-full md:w-5/12 ${isLeft ? 'md:pr-10 md:text-right' : 'md:ml-auto md:pl-10'}`}
                   >
                     <div className="bg-surface dark:bg-dark-surface rounded-2xl p-6 border border-border dark:border-dark-border shadow-sm hover:shadow-md transition-shadow duration-300">

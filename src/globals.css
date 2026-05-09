@@ -41,11 +41,17 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* Removed scroll-behavior: smooth — it overrides native iOS momentum
+     scrolling and causes jank. Nav scroll is handled programmatically via JS. */
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   font-family: var(--font-body);
+  /* iOS momentum scrolling */
+  -webkit-overflow-scrolling: touch;
+  /* Prevent overscroll bounce from causing layout shifts */
+  overscroll-behavior-y: none;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
 }
 
@@ -56,6 +62,21 @@ body {
 
 .animate-spin-slow {
   animation: spin-slow 8s linear infinite;
+  /* Promote to GPU compositing layer — prevents triggering repaints during scroll */
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* GPU compositing for Framer Motion animated elements */
+[data-framer-motion] {
+  backface-visibility: hidden;
+}
+
+/* Give sections content-visibility hints for faster mobile paint */
+section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
 }
 
 /* Custom scrollbar */

@@ -3,7 +3,6 @@
  * and whileInView stagger animations.
  */
 
-import { motion } from 'framer-motion'
 import {
   SiReact, SiAngular, SiTypescript, SiBootstrap,
   SiFlutter,
@@ -96,12 +95,8 @@ export default function Skills() {
                   const Icon = SKILL_ICONS[skill]
                   const accentClass = ACCENT_COLORS[group.color]
                   return (
-                    <motion.div
+                    <div
                       key={skill}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.05, duration: 0.4 }}
                       className={`
                         group/pill flex items-center gap-2.5 px-4 py-2.5 rounded-xl
                         bg-bg dark:bg-dark-bg border border-border dark:border-dark-border
@@ -119,7 +114,7 @@ export default function Skills() {
                         />
                       )}
                       {skill}
-                    </motion.div>
+                    </div>
                   )
                 })}
               </div>
