@@ -1,46 +1,73 @@
-/** Project data for the portfolio — TODO: Replace with real project data, images, and URLs */
+/** Project data for Raghul Ramakrishnan's portfolio */
 
 import type { Project } from '../types'
+
+import auraImg      from '../assets/aura.png'
+import progeniImg   from '../assets/progeni.png'
+import youtuberImg  from '../assets/youtuber.png'
+import groceryImg   from '../assets/grocery.png'
+import shopImg      from '../assets/shop.png'
+import museumImg    from '../assets/museum.jpg'
 
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'AlgoMox Dashboard',
+    title: 'Registration Website for Aura25',
     description:
-      'Enterprise-grade admin dashboard built with React and TypeScript. Features real-time data visualization, role-based access control, and a fully responsive design system.',
-    image: '/projects/algomox.png', // TODO: Replace with real image
-    tech: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
-    github: 'https://github.com/raghulramakrishnan', // TODO: Replace
-    live: '',
+      'Developed the Aura event registration website using React, featuring Framer Motion, scroll effects, and a sleek design. Integrated Google Forms for user data registration.',
+    image: auraImg,
+    tools: ['React', 'Framer Motion', 'Google Forms', 'Vercel', 'Hostinger'],
+    github: '',
+    liveLink: 'https://www.aura25.site',
   },
   {
     id: 2,
-    title: 'RenderSpark Portfolio',
+    title: 'Website for Symposium',
     description:
-      'Personal portfolio website with smooth animations, clean visual hierarchy, and a focus on design craft. Built to showcase both engineering and design capabilities.',
-    image: '/projects/renderspark.png', // TODO: Replace with real image
-    tech: ['React', 'TypeScript', 'Figma'],
-    github: 'https://github.com/raghulramakrishnan', // TODO: Replace
-    live: 'https://renderspark.vercel.app/',
+      'Developed a symposium website with JWT authentication, user profiles, QR code-based payment verification, and MongoDB integration for seamless registration and data management.',
+    image: progeniImg,
+    tools: ['React', 'MongoDB', 'Node', 'Express', 'JWT', 'Vercel'],
+    github: '',
+    liveLink: 'https://progeni25.vercel.app/',
   },
   {
     id: 3,
-    title: 'Flutter Commerce App',
+    title: 'UI Design for YouTuber',
     description:
-      'Cross-platform mobile e-commerce application with product listings, cart management, and payment gateway integration — built with Flutter for iOS and Android.',
-    image: '/projects/flutter-app.png', // TODO: Replace with real image
-    tech: ['Flutter', 'Dart', 'Firebase', 'REST API'],
-    github: 'https://github.com/raghulramakrishnan', // TODO: Replace
-    live: '',
+      "Designed a modern UI in Figma for a movie review YouTuber's website, focusing on showcasing videos and enhancing user engagement.",
+    image: youtuberImg,
+    tools: ['Figma', 'Unsplash'],
+    github: '',
+    liveLink: 'https://www.figma.com/design/J2w0M341gDQDaVyXvwTyVG/Youtuber-Design?node-id=0-1&t=4XkPFc0d1hWf30UK-1',
   },
   {
     id: 4,
-    title: 'GraphQL API Gateway',
+    title: 'Modern Ecommerce Website',
     description:
-      'Scalable API gateway built with Node.js and GraphQL that consolidates multiple microservices behind a unified schema with JWT authentication and rate limiting.',
-    image: '/projects/api-gateway.png', // TODO: Replace with real image
-    tech: ['Node.js', 'GraphQL', 'Go', 'MongoDB'],
-    github: 'https://github.com/raghulramakrishnan', // TODO: Replace
-    live: '',
+      'A sleek e-commerce platform with a modern design, dynamic cart and wishlist, robust filters, and a budget tracker for a seamless shopping experience.',
+    image: groceryImg,
+    tools: ['React', 'Removebg', 'Framer Motion', 'Vercel'],
+    github: 'https://github.com/raghul1217/Algomox-Groceryshop',
+    liveLink: 'https://algomox-groceryshop-3z7i.vercel.app/',
+  },
+  {
+    id: 5,
+    title: 'E-Products Shopping',
+    description:
+      'Developed a MERN stack shopping cart website with full CRUD functionality, featuring an admin panel for efficient product management, editing, and updates.',
+    image: shopImg,
+    tools: ['React', 'Node', 'Express', 'Tailwind', 'Cloudinary', 'MongoDB', 'Vercel'],
+    github: 'https://github.com/raghul1217/Project_expo_stripe',
+    liveLink: 'https://digi-frontend-bay.vercel.app',
+  },
+  {
+    id: 6,
+    title: 'Museum UI Design',
+    description:
+      'Designed a modern UI in Figma for a museum website, focusing on showcasing multiple events, historical statues, and conducting virtual tours.',
+    image: museumImg,
+    tools: ['Figma', 'Unsplash', 'Iconify'],
+    github: 'https://www.figma.com/design/TRea6h6M2UKkwBtAkDVr5V/REVIVE24-MUSEUM?node-id=0-1&t=Wo5140NiCp6dVTXU-1',
+    liveLink: 'https://www.figma.com/design/TRea6h6M2UKkwBtAkDVr5V/REVIVE24-MUSEUM?node-id=0-1&t=Wo5140NiCp6dVTXU-1',
   },
 ]

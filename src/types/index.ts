@@ -5,9 +5,9 @@ export interface Project {
   title: string
   description: string
   image: string
-  tech: string[]
+  tools: string[]
   github: string
-  live: string
+  liveLink: string
 }
 
 export interface SkillGroup {
